@@ -10,6 +10,5 @@ public class Client {
         h1.handleRequest(-1);
         h1.handleRequest(0);
         h1.handleRequest(1);
-
     }
 }
