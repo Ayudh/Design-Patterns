@@ -1,0 +1,19 @@
+package singleton;
+
+public class Singleton {
+    private static Singleton singletonInstance;
+    private Singleton() {
+
+    }
+    public static Singleton getInstance() {
+        if (singletonInstance == null)
+            singletonInstance = new Singleton();
+        return singletonInstance;
+    }
+
+    public static void main(String[] args) {
+        // getInstance returns the same object all the time
+        // to avoid multiple instances
+        System.out.println(Singleton.getInstance() == Singleton.getInstance());
+    }
+}
